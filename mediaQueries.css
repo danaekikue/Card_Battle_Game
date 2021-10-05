@@ -1,0 +1,46 @@
+
+
+@media (min-width: 1200px){
+	.container{
+		width: 1014px !important;
+	}
+	.deck {
+	    position: absolute;
+	    float: right;
+	    display: none;
+	    margin-top: 5% !important;
+	    margin-left: 33%;
+	}
+	 #reset {
+	    margin-top: 83%;
+	}
+
+	#continue {
+    	margin-top: 77%;
+	}
+
+}
+
+@media (min-width: 200px){
+	
+	.deck {
+	    position: absolute;
+	    float: right;
+	    display: none;
+	    margin-top: 5%;
+	    margin-left: 33%;
+	}
+	 #reset {
+	    margin-top: 83%;
+	}
+
+	#continue {
+    	margin-top: 77%;
+	}
+
+}
+
+
+
+
+			

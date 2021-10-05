@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="jquery.easyaudioeffects.1.0.0.js"></script>
+		<script src="jquery.easyaudioeffects.1.0.0.min.js"></script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> FF Tribute </title>
+		<link rel="stylesheet" type="text/css" href="home.css" href="animate.css">
+		
+
+		<script>
+			
+			$(document).ready(function(){
+
+				$(function() {
+				  var song = document.getElementById("intro");
+				  song.volume = 0.2;
+				});
+
+				
+
+				//alert("working");
+
+				$(".menu > #sword").fadeIn(4000,function(){
+					$(".menu > #newGame").fadeIn(3000);
+					$(".menu > #rules").fadeIn(3000);
+				});
+				
+				$(".menu > #newGame").hover(function() {
+				    // mouseover
+				    $(this).css("font-style", "italic");
+				  }, function() {
+				    // mouseout
+				    $(this).css("font-style", "normal");
+				  });
+
+				$(".menu > #rules").hover(function() {
+				    // mouseover
+				    $(this).css("font-style", "italic");
+				  }, function() {
+				    // mouseout
+				    $(this).css("font-style", "normal");
+				  });
+
+				$(".menu > #newGame").easyAudioEffects({
+			       ogg : "sounds/ff8Sound.ogg",
+			       mp3 : "sounds/ff8Sound.mp3",
+			       eventType : "hover"
+			    });
+
+			    $(".menu > #rules").easyAudioEffects({
+			       ogg : "sounds/ff8Sound.ogg",
+			       mp3 : "sounds/ff8Sound.mp3",
+			       eventType : "hover"
+			    });
+
+
+				$(".menu > #newGame").click(function(){
+					window.location = "game.html";
+				});
+
+				$(".menu > #rules").click(function(){
+					window.location = "rules.html";
+				});
+
+			});
+			
+		</script>
+	</head>
+
+	<body>
+		<div class="menu">
+			<img id="sword" src="img/oyasumi-punpun-wallpaper82.jpg">
+			<div class="start" id="newGame">NEW GAME</div>
+			<div class="start" id="rules">RULES</div>
+		</div>
+
+		<audio id="intro" src="sounds/Final Fantasy VII - Prelude [HQ].mp3" autoplay>
+			<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+		</audio>
+	</body>
+	s
+</html>

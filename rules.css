@@ -1,0 +1,18 @@
+@font-face {
+    font-family: startFont;
+   	src: url(fonts/prstart.ttf);
+}
+
+@font-face {
+    font-family: ff8;
+   	src: url(fonts/Final_Fantasy_VII.ttf);
+}
+
+
+body{
+	background-image: url(img/giphy.gif);
+	background-repeat: no-repeat;
+	background-size:cover;
+	color: white;
+}
+

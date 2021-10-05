@@ -1,0 +1,48 @@
+@font-face {
+    font-family: startFont;
+   	src: url(fonts/prstart.ttf);
+}
+
+@font-face {
+    font-family: ff8;
+   	src: url(fonts/Final_Fantasy_VII.ttf);
+}
+
+
+body{
+	background-color: black;
+}
+
+img {
+	display: none;
+  margin-top: 4.5%;
+  margin-left: 12%;
+}
+
+.menu{
+  position: relative;
+}
+
+#newGame{
+  display: none;
+  position: absolute;
+  left: 40%;
+  bottom: 45%;
+  font-style: normal;
+  cursor: pointer;
+}
+
+#rules{
+  display: none;
+  position: absolute;
+  left: 40%;
+  bottom: 40%;
+  cursor: pointer;
+}
+
+.start{
+	font-family: ff8;
+	color: white;
+	font-size: 50px;
+
+}

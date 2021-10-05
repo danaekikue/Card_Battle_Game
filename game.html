@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> FF Tribute </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+
+		<link rel="stylesheet" type="text/css" href="mediaQueries.css">
+
+		<link rel="stylesheet" type="text/css" href="game.css">
+
+
+
+
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- JS -->
+		<script src="myScript.js"></script>
+
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+		<!-- External plugins for some effects -->
+
+		<!-- Sounds : https://github.com/rm-labo/easyaudioeffects -->
+		<script src="jquery.easyaudioeffects.1.0.0.js"></script>
+		<script src="jquery.easyaudioeffects.1.0.0.min.js"></script>
+
+
+		
+		<!-- CSS -->
+
+		<style>
+			body{
+				background-color: black;
+				color: white;
+			}			
+		</style>
+
+
+
+		<script>
+			$(document).ready(function(){
+				please();
+			});
+		</script>
+	</head>
+
+	<body>
+		<audio id="intro" src="sounds/Final Fantasy VIII - Shuffle or Boogie [HQ].mp3" autoplay loop>
+			<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+		</audio>
+
+		<div class ="helper">
+			<img id="kupo" src="img/tumblr_oo3nm2yevm1w83qhyo1_500.gif">
+			<div id="dialog">
+				Welcome!
+			</div>
+			<div id="continue">Yes</div>
+			<div id="reset">No</div>
+		</div>
+
+		<div class="deck">
+			<div class="container" width= "1060px">
+				<div class="row top-buffer" >
+			    	<div class="col-md-2">
+				    	<div class="card1">
+				    		<img id="1" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+				    <div class="col-md-2">
+			    		<div class="card2">
+							<img id="2" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+			    		<div class="card3">
+							<img id="3" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card4">
+							<img id="4" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card5">
+							<img id="5" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+				</div>
+				 <div class="row top-buffer">
+				   	<div class="col-md-2">
+				    	<div class="card6">
+							<img id="6" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card7">
+							<img id="7" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card8">
+							<img id="8" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card9">
+							<img id="9" src="img/cards/cardBG.jpg">
+						</div>
+					</div>
+					<div class="col-md-2">
+				    	<div class="card10">
+							<img id="10" src="img/cards/cardBG.jpg">
+							</div>
+					</div>
+				  </div>
+			</div>	
+		</div>
+
+		<div class="messages">
+			<div id="attack">Attack</div>
+			<div id="defense">Defense</div>
+			<div id="resetGame">Reset</div>
+		</div>
+		
+		<div class="arena">
+			<div id="heroAP">AP: <span id="HAP"></span> </div>
+			<div id="heroDP">DP: <span id="HDP"></span> </div>
+			<div id="enemyAP">AP: <span id="EAP"></span> </div>
+			<div id="enemyDP">DP: <span id="EDP"></span> </div>
+			<div id="round"></div>
+			<div id="start">START</div>
+			<img id="grid" src="img/grid.png">
+			<img id="user" src="img/cards/cardBG.jpg">
+			<img id="computer" src="img/cards/cardBG.jpg">
+			<img id="imgAttackUser" src="">
+			<img id="imgAttackComputer" src="">
+			<img id="imgDefenseUser" src="">
+			<img id="imgDefenseComputer" src="">
+		</div>
+
+		<div id="again">START AGAIN</div>
+	</body>
+</html>
